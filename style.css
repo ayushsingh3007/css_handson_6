@@ -1,0 +1,319 @@
+body{
+    background: orange;
+}
+
+
+
+ol{
+    margin-inline: auto;
+}
+
+ol li{
+    width: 500px;
+    margin: 5px auto;
+}
+
+.index_container{
+    margin: 0px auto;
+}
+
+.divs{
+    width: 80px; 
+    display: inline-block;
+    height: 80px;
+    margin: 25px 20px;
+}
+
+.skew{
+    background: rgb(95, 95, 154);
+    animation-name: skew;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes skew{
+    0%{transform: skew(-20deg);}
+    50%{transform: skew(20deg);}
+    100%{transform: skew(-20deg);}
+}
+
+.skew2{
+    background: violet;
+    animation: skew2 infinite 5s ease;
+}
+
+@keyframes skew2{
+    0%{
+        transform: skewy(-20deg);
+    }
+    50%{
+        transform: skewy(20deg);
+    }
+    100%{
+        transform: skewy(-20deg);
+    }
+}
+
+.rotate{
+    background-color: rgb(87, 87, 163);
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.scaley{
+    background:rgb(87, 87, 163);
+    animation: scaley infinite 3s ease;
+}
+
+@keyframes scaley{
+    0%{
+        transform: scaley(0.5);
+    }
+    50%{
+        transform: scaley(1);
+    }
+    100%{
+        transform: scaley(0.5);
+    }
+}
+
+.scalex{
+    background: brown;
+    animation: scalex infinite 3s linear;
+}
+
+@keyframes scalex{
+    0%{
+        transform: scalex(0.5);
+    }
+    50%{
+        transform: scalex(1);
+    }
+    100%{
+        transform: scalex(0.5);
+    }
+}
+
+.rotate2{
+    background: green;
+    animation: rotate2 infinite 3s ease;
+}
+
+@keyframes rotate2{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-90deg);
+    }
+    100%{
+        transform: scalex(0deg);
+    }
+}
+
+
+
+.child_index_1{
+    width: 100px; 
+    height: 100px;
+    margin: 15px 20px;
+}
+
+.container_index1_main{
+    width: 250px;
+    margin:auto;
+}
+
+.transition1{
+    background: green;
+    transition: ease 2s;
+}
+
+.transition1:hover{
+    width: 250px;
+}
+
+.transition2{
+    background: green;
+    transition: ease-in 2s;
+}
+
+.transition2:hover{
+    width: 250px;
+    height: 250px;
+}
+
+.transition3{
+    background: green;
+    transition: ease-in-out 2s;
+}
+
+.transition3:hover{
+    width: 250px;
+}
+
+.transition4{
+    background: green;
+    transition: ease-out 0.7s;
+}
+
+.transition4:hover{
+    width: 250px;
+}
+
+.transition5{
+    background: green;
+    transition: linear 0.7s;
+}
+
+.transition5:hover{
+    width: 250px;
+    transition:linear 0.7s;
+    width: 300px;
+}
+
+.transition6{
+    background: green;
+    transition: step-end 0.7s;
+}
+
+.transition6:hover{
+    width: 300px;
+
+}
+
+.transition7{width: 100PX;
+    background: green;
+    transition: step-start 0.7s;
+}
+
+.transition7:hover{
+    width: 300px;
+}
+
+
+
+
+
+
+
+
+*{margin:0px;
+padding: 0px;}
+.main_container{height: 100vh;
+width: 100%;
+border:background-image-linear-gradient(orange,red);
+background-image: url(./sky.jpg);
+background-size:cover;
+background-position:center;
+position:relative;
+overflow-x:hidden;}
+.main_heading{position: relative;
+left: 33%;}
+
+.first{background-color: orange;
+font-size: xx-large;}
+.second{background-color: white;
+font-size: xx-large;}
+.third{background-color: green;
+font-size: xx-large;}
+.highway{height: 200px;
+width: 500%;
+display: block;
+background-image: url(./road.jpg);
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+z-index: 1;
+background-repeat: repeat-x;
+animation: highwaymotion 5s linear infinite;
+}
+@keyframes highwaymotion{
+    100%{transform: translate(-3400px);
+
+    }
+}
+.city{height: 250px;
+width: 500%;
+background-image: url(./city.png);
+bottom:200px;
+left: 0px;
+right: 0px;
+display: block;
+position: absolute;
+z-index: 1;
+background-repeat: repeat-x;
+animation: citymotion 20s linear infinite;
+}
+@keyframes citymotion{
+    100%{transform: translate(-1400px);
+
+    } }
+
+.car{width: 400px;
+left: 50%;
+bottom: 100px;
+transform: translateX(-50%);
+position: absolute;
+z-index: 2;
+}
+.car img{width: 100%;
+animation: car 1s linear infinite;
+}
+@keyframes car{
+    100%{ transform:translate(-1px); }
+    50%{transform: translate(1px);}
+    0%{transform: translate(-1px);}
+}
+
+.wheel{left:50%;
+bottom:178px;
+transform: translate(-50%);
+position: absolute;
+z-index: 2;
+}
+.wheel img{width: 72px;
+    height: 72px;
+animation: wheel 1s linear infinite;}
+@keyframes wheel{
+    100%{transform: rotate(360deg);}
+}
+    
+
+    .back_wheel{left:-165px;
+        top: 5px;
+            position: absolute;}
+            .front_wheel{left:80px;
+        top: 5px;
+            position: absolute;}
+
+ .flag{left:58%;
+ bottom:178px;
+position: absolute;
+z-index: 2;
+}
+.flag img{height: 80px;
+         width: 100px;
+         }           
+
+ .sun{right:10%;
+       top:5%;
+       position: absolute;
+       z-index: 2;}
+.sun img{height: 100px;
+   width: 100px;}               
