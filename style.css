@@ -220,6 +220,7 @@ width: 100%;
     boder-right:8px solid green;
     border-bottom:8px solid white;
     border-top:8px solid white;
+    box-sizing:border-box;
 border:background-image-linear-gradient(orange,red);
 background-image: url(./sky.jpg);
 background-size:cover;
